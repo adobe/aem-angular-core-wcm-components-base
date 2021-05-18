@@ -27,7 +27,8 @@
     "cover": "run-p cover:**  --max-parallel 4",
     "postcover": "istanbul report json && node combine-coverage.js",
     "ngcc": "ngcc",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "postversion": "cp -r package.json"
   },
   "private": true,
   "dependencies": {
@@ -79,6 +80,7 @@
     "@semantic-release/github": "^7.2.0",
     "semantic-release": "^17.4.1"
   },
+
 
   "release": {
     "pkgRoot": "./dist/aem-angular-core-wcm-components"
