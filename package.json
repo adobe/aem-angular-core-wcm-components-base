@@ -30,6 +30,10 @@
     "semantic-release": "semantic-release",
     "postversion": "cp -r package.json"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adobe/aem-angular-core-wcm-components-base"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.1.12",
