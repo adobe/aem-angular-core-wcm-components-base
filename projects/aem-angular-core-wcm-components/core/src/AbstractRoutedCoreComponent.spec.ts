@@ -46,6 +46,10 @@ const nonRoutedItem:RoutedCoreComponentModel = {
     routed: false
 };
 
+const nonSpecifiedItem:RoutedCoreComponentModel = {
+
+};
+
 describe('AbstractRoutedCoreComponent', () => {
 
     let component: TestComponent;
@@ -73,6 +77,7 @@ describe('AbstractRoutedCoreComponent', () => {
         fixture = TestBed.createComponent(TestComponent);
 
         component = fixture.componentInstance;
+        delete component.routed;
         fixture.detectChanges();
 
 
@@ -118,17 +123,15 @@ describe('AbstractRoutedCoreComponent', () => {
 
     });
 
-    it('should route the item in all cases even if the item is false', () => {
+    it('should route when nothing is specified', () => {
 
-        component.routed = true;
         fixture.detectChanges();
-
-        const isRouted = component.isItemRouted(nonRoutedItem);
+        const isRouted = component.isItemRouted(nonSpecifiedItem);
         expect(isRouted).toBeTrue();
 
     });
 
-    it('should route the item in all cases even if the item is true', () => {
+    it('should route the item in all cases even if the component is false', () => {
 
         component.routed = false;
         fixture.detectChanges();
