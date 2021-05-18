@@ -26,7 +26,8 @@
     "cover:library:core:navigation:v1": "ng test aem-angular-core-wcm-components-navigation-v1 --code-coverage=true",
     "cover": "run-p cover:**  --max-parallel 4",
     "postcover": "istanbul report json && node combine-coverage.js",
-    "ngcc": "ngcc"
+    "ngcc": "ngcc",
+    "semantic-release": "semantic-release"
   },
   "private": true,
   "dependencies": {
@@ -70,6 +71,16 @@
     "tslint": "~6.1.0",
     "typescript": "~3.8.3",
     "npm-run-all": "^4.1.5",
-    "istanbul-combine": "^0.3.0"
+    "istanbul-combine": "^0.3.0",
+    "commitizen": "^4.2.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.2.0",
+    "semantic-release": "^17.4.1"
+  },
+
+  "release": {
+    "pkgRoot": "./dist/aem-angular-core-wcm-components"
   }
 }

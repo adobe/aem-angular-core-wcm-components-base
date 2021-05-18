@@ -1,6 +1,0 @@
-branch: master
-preset: "angular"
-prepare:
-  - pkgRoot: "projects/aem-angular-core-wcm-components"
-publish:
-  - pkgRoot: "dist/aem-angular-core-wcm-components"
