@@ -40,7 +40,16 @@ export abstract class AbstractRoutedCoreComponent extends AbstractCoreComponent 
      * @param item
      */
     isItemRouted(item:RoutedCoreComponentModel): boolean{
-        return (item.routed === true || this.routed === true);
+
+        const itemRoutedSpecified  = typeof item.routed === 'boolean';
+        const componentRoutedSpecified = typeof this.routed === 'boolean';
+        const left =  (!(itemRoutedSpecified && item.routed === false));
+        const right = (!(componentRoutedSpecified && this.routed === false));
+
+        if(left)
+
+
+        return  (typeof item.routed !== 'boolean'  && typeof this.routed !== 'boolean')  ||  (item.routed === true || this.routed === true);
     }
 
 }
