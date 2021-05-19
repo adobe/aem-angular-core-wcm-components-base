@@ -2,6 +2,7 @@
   "name": "angular-core",
   "version": "1.0.1",
   "scripts": {
+
     "ng": "ng",
     "start": "ng serve",
     "build-internal": "ng build aem-angular-core-wcm-components && ngcc -s ./dist",
