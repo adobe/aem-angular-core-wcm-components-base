@@ -93,7 +93,7 @@
       "@semantic-release/release-notes-generator",
       "@semantic-release/npm",
       ["@semantic-release/git", {
-        "assets": ["package.json", "dist/aem-angular-core-wcm-components/package.json"]
+        "assets": ["package.json", "projects/aem-angular-core-wcm-components/package.json"]
       }]
     ]
   }
