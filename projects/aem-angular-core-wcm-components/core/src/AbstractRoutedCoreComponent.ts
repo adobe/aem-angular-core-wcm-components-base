@@ -29,7 +29,7 @@ export abstract class AbstractRoutedCoreComponent extends AbstractCoreComponent 
     /**
      * Flag the entire core component to have routed links
      */
-    @Input() routed = false;
+    @Input() routed;
 
     /**
      * Determine if an individual item (such as navigation entry or list link) should be routed or not.
