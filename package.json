@@ -86,6 +86,7 @@
     "@semantic-release/github": "^7.2.0",
     "semantic-release": "^17.4.1"
   },
+
   "release": {
     "pkgRoot": "./dist/aem-angular-core-wcm-components",
     "plugins": [
