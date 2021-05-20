@@ -2,7 +2,6 @@
   "name": "angular-core",
   "version": "1.0.1",
   "scripts": {
-
     "ng": "ng",
     "start": "ng serve",
     "build-internal": "ng build aem-angular-core-wcm-components && ngcc -s ./dist",
@@ -28,8 +27,7 @@
     "cover": "run-p cover:**  --max-parallel 4",
     "postcover": "istanbul report json && node combine-coverage.js",
     "ngcc": "ngcc",
-    "semantic-release": "semantic-release",
-    "postversion": "cp -r package.json"
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
@@ -86,16 +84,21 @@
     "@semantic-release/github": "^7.2.0",
     "semantic-release": "^17.4.1"
   },
-
   "release": {
     "pkgRoot": "./dist/aem-angular-core-wcm-components",
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
       "@semantic-release/npm",
-      ["@semantic-release/git", {
-        "assets": ["package.json", "projects/aem-angular-core-wcm-components/package.json"]
-      }]
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "package.json",
+            "projects/aem-angular-core-wcm-components/package.json"
+          ]
+        }
+      ]
     ]
   }
 }
