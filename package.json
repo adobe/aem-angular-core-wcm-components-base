@@ -85,11 +85,14 @@
     "semantic-release": "^17.4.1"
   },
   "release": {
-    "pkgRoot": "./dist/aem-angular-core-wcm-components",
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
-      "@semantic-release/npm",
+      ["@semantic-release/npm",
+        {
+          "pkgRoot": "./dist/aem-angular-core-wcm-components"
+        }
+      ],
       [
         "@semantic-release/git",
         {
