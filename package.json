@@ -91,6 +91,11 @@
       ["@semantic-release/npm",
         {
           "pkgRoot": "./dist/aem-angular-core-wcm-components",
+        }
+      ],
+      [
+        "@semantic-release/exec",
+        {
           "prepareCmd": "npm run update-version"
         }
       ],
