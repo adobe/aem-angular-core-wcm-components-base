@@ -91,7 +91,7 @@
       "@semantic-release/release-notes-generator",
       ["@semantic-release/npm",
         {
-          "pkgRoot": "./dist/aem-angular-core-wcm-components",
+          "pkgRoot": "./dist/aem-angular-core-wcm-components"
         }
       ],
       [
