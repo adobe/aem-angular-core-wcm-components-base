@@ -27,6 +27,7 @@
     "cover": "run-p cover:**  --max-parallel 4",
     "postcover": "istanbul report json && node combine-coverage.js",
     "ngcc": "ngcc",
+    "update-version": "node update-version.js",
     "semantic-release": "semantic-release"
   },
   "repository": {
