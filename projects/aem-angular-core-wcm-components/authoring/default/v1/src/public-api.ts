@@ -13,8 +13,6 @@
  ~ See the License for the specific language governing permissions and
  ~ limitations under the License.
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-export {DefaultV1Model, DefaultV1IsEmptyFn} from "@adobe/aem-core-components-angular-base/core"
-
 export * from "./default.v1.component";
 export * from "./default.v1.module";
 

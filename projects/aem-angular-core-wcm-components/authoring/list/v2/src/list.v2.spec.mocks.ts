@@ -1,4 +1,4 @@
-import {ListV2Item, ListV2Model} from './list.v2.component';
+import {ListV2Item, ListV2Model} from '@adobe/aem-core-components-angular-base/core';
 
 
 export const mockItems:ListV2Item[] = [
