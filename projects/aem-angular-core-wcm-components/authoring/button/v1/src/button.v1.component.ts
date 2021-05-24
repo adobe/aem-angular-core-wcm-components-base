@@ -14,16 +14,8 @@
  ~ limitations under the License.
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-import {Component, EventEmitter, HostBinding, Input, Output} from '@angular/core';
-import {AbstractRoutedCoreComponent} from "@adobe/aem-core-components-angular-base/core";
-import {RoutedCoreComponentModel} from "@adobe/aem-core-components-angular-base/core";
-
-export interface ButtonV1Model extends RoutedCoreComponentModel{
-    text?: string;
-    link?: string;
-    icon?: string;
-    ariaLabel?: string;
-}
+import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {AbstractRoutedCoreComponent, ButtonV1Model, ButtonV1IsEmptyFn} from "@adobe/aem-core-components-angular-base/core";
 
 @Component({
     selector: 'core-button-v1',
@@ -53,8 +45,4 @@ export class ButtonV1Component extends AbstractRoutedCoreComponent implements Bu
     get isEmpty(): boolean {
         return ButtonV1IsEmptyFn(this);
     }
-}
-
-export function ButtonV1IsEmptyFn(props:ButtonV1Model): boolean{
-    return props.text == null || props.text.trim().length === 0;
 }

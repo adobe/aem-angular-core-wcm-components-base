@@ -17,30 +17,12 @@
 
 
 import {Component, HostBinding, Input} from "@angular/core";
-import {AbstractRoutedCoreComponent} from "@adobe/aem-core-components-angular-base/core";
-
-export function TeaserV1IsEmptyFn(props:TeaserV1Model): boolean{
-    return !props.title || !props.description
-}
-
-export interface TeaserV1Action {
-    title: string
-    URL: string
-    routed?: boolean
-}
-
-export interface TeaserV1Model{
-    pretitle?: string
-    title?: string
-    description?: string
-    titleType: string
-    linkURL: string
-    actionsEnabled: boolean
-    imageLinkHidden: boolean
-    titleLinkHidden: boolean
-    actions: TeaserV1Action[]
-    imagePath: string
-}
+import {
+    AbstractRoutedCoreComponent,
+    TeaserV1Action,
+    TeaserV1IsEmptyFn,
+    TeaserV1Model
+} from "@adobe/aem-core-components-angular-base/core";
 
 
 @Component({

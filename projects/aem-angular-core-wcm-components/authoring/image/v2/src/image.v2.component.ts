@@ -16,21 +16,11 @@
 
 
 import {Component, HostBinding, Input} from "@angular/core";
-import {AbstractRoutedCoreComponent, RoutedCoreComponentModel} from "@adobe/aem-core-components-angular-base/core";
-
-
-export interface ImageV2Model extends RoutedCoreComponentModel{
-    src: string
-    alt: string
-    displayPopupTitle?: boolean
-    title?: string
-    link?: string
-}
-
-export function ImageV2IsEmptyFn(props:ImageV2Model) {
-    return (!props.src) || props.src.length === 0;
-}
-
+import {
+    AbstractRoutedCoreComponent, ImageV2IsEmptyFn,
+    ImageV2Model,
+    RoutedCoreComponentModel
+} from "@adobe/aem-core-components-angular-base/core";
 
 @Component({
     selector: 'core-image-v2',

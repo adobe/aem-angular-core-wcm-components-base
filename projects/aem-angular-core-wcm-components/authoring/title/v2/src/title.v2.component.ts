@@ -18,18 +18,12 @@
 
 import {Component, HostBinding, Input} from "@angular/core";
 
-import {AbstractRoutedCoreComponent} from "@adobe/aem-core-components-angular-base/core";
+import {
+    AbstractRoutedCoreComponent,
+    TitleV2IsEmptyFn,
+    TitleV2Model
+} from "@adobe/aem-core-components-angular-base/core";
 
-export interface TitleV2Model{
-    text: string;
-    linkURL: string;
-    linkDisabled: boolean;
-    type: string;
-}
-
-export function TitleV2IsEmptyFn(props:TitleV2Model): boolean{
-    return props.text == null || props.text.trim().length === 0;
-}
 
 @Component({
     selector: 'core-title-v2',

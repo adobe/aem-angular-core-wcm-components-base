@@ -17,11 +17,9 @@
 
 
 import {Component, HostBinding, Input} from "@angular/core";
-import {AbstractCoreComponent} from "@adobe/aem-core-components-angular-base/core";
+import {AbstractCoreComponent, SeparatorV1IsEmptyFn} from "@adobe/aem-core-components-angular-base/core";
 
-export function SeparatorV1IsEmptyFn(): boolean{
-    return false;
-}
+
 @Component({
     selector: 'core-separator-v1',
     templateUrl: './separator.v1.component.html',
@@ -30,6 +28,6 @@ export class SeparatorV1Component extends AbstractCoreComponent{
     @Input() baseCssClass = 'cmp-separator';
 
     get isEmpty(): boolean {
-        return false;
+        return SeparatorV1IsEmptyFn();
     }
 }
