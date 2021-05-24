@@ -18,8 +18,8 @@ import {ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {BrowserDynamicTestingModule} from '@angular/platform-browser-dynamic/testing';
 
-
-import {BreadCrumbV2Component, BreadCrumbV2ItemModel} from './breadcrumb.v2.component';
+import {BreadCrumbV2ItemModel} from '@adobe/aem-core-components-angular-base/core';
+import {BreadCrumbV2Component} from './breadcrumb.v2.component';
 
 import {
     AemAngularCoreWcmComponentsCore,

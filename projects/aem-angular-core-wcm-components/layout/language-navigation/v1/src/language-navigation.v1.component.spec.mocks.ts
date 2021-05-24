@@ -1,4 +1,4 @@
-import {LanguageNavigationV1Item} from "./language-navigation.v1.component";
+import {LanguageNavigationV1Item} from "@adobe/aem-core-components-angular-base/core";
 
 export const items:LanguageNavigationV1Item[] = [
     {

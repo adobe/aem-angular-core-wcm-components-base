@@ -1,4 +1,4 @@
-import {NavigationV1Item} from "./navigation.v1.component";
+import {NavigationV1Item} from "@adobe/aem-core-components-angular-base/core";
 
 export const items:NavigationV1Item[] = [
     {

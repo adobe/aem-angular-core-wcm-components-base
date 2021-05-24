@@ -18,8 +18,8 @@ import {ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {BrowserDynamicTestingModule} from '@angular/platform-browser-dynamic/testing';
 
-
-import {LanguageNavigationV1Component, LanguageNavigationV1Item} from './language-navigation.v1.component';
+import {LanguageNavigationV1Item} from '@adobe/aem-core-components-angular-base/core';
+import {LanguageNavigationV1Component} from './language-navigation.v1.component';
 import {
     AemAngularCoreWcmComponentsCore,
     DefaultNavigationUtilityServiceImpl,
