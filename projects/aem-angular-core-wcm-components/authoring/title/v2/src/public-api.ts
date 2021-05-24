@@ -14,8 +14,7 @@
  ~ limitations under the License.
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-import {TitleV2IsEmptyFn, TitleV2Model} from "@adobe/aem-core-components-angular-base/core";
 export * from "./title.v2.component";
 
 export * from "./title.v2.module";
-export {TitleV2IsEmptyFn, TitleV2Model};
+export {TitleV2IsEmptyFn, TitleV2Model} from "@adobe/aem-core-components-angular-base/core";

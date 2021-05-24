@@ -10,6 +10,7 @@
     "build-prod-internal": "ng build aem-angular-core-wcm-components --prod  && ngcc -s ./dist",
     "test": "ng test aem-angular-core-wcm-components",
     "lint": "ng lint",
+    "publish": "npm publish --dry-run",
     "e2e": "ng e2e",
     "cover:libary:core": "ng test aem-angular-core-wcm-components-core --code-coverage=true",
     "cover:library:core:button:v1": "ng test aem-angular-core-wcm-components-button-v1  --code-coverage=true",

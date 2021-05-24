@@ -13,8 +13,7 @@
  ~ See the License for the specific language governing permissions and
  ~ limitations under the License.
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-import {ButtonV1Model, BreadCrumbV2IsEmptyFn} from "@adobe/aem-core-components-angular-base/core";
-export {ButtonV1Model, BreadCrumbV2IsEmptyFn};
+export {ButtonV1Model, BreadCrumbV2IsEmptyFn} from "@adobe/aem-core-components-angular-base/core";
 
 export * from "./button.v1.component";
 export * from "./button.v1.module";

@@ -14,8 +14,6 @@
  ~ limitations under the License.
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-import {TeaserV1IsEmptyFn, TeaserV1Action, TeaserV1Model} from "@adobe/aem-core-components-angular-base/core";
 export * from "./teaser.v1.component";
-
 export * from "./teaser.v1.module";
-export {TeaserV1IsEmptyFn, TeaserV1Action, TeaserV1Model};
+export {TeaserV1IsEmptyFn, TeaserV1Action, TeaserV1Model} from "@adobe/aem-core-components-angular-base/core";
