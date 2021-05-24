@@ -14,5 +14,7 @@
  ~ limitations under the License.
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-export * from './image.v2.component';
-export * from './image.v2.module';
+export * from "./image.v2.component";
+export * from "./image.v2.module";
+
+export {ImageV2IsEmptyFn,ImageV2Model} from "@adobe/aem-core-components-angular-base/core";

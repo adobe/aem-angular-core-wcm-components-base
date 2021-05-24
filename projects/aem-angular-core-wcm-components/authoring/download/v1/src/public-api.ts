@@ -14,5 +14,8 @@
  ~ limitations under the License.
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-export * from './download.v1.component';
-export * from './download.v1.module';
+import {DownloadV1IsEmptyFn, DownloadV1LabelsModel, DefaultV1Model} from "@adobe/aem-core-components-angular-base/core";
+export * from "./download.v1.component";
+
+export * from "./download.v1.module";
+export {DownloadV1IsEmptyFn, DownloadV1LabelsModel, DefaultV1Model}
