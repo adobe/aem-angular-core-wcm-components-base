@@ -15,11 +15,8 @@
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 import {Component, HostBinding, Input} from '@angular/core';
-import {AbstractCoreComponent} from "@adobe/aem-core-components-angular-base/core";
+import {AbstractCoreComponent, DefaultV1IsEmptyFn, DefaultV1Model} from "@adobe/aem-core-components-angular-base/core";
 
-export interface DefaultV1Model{
-    aHtml: string;
-}
 
 @Component({
     selector: 'core-default-v1',
@@ -33,8 +30,4 @@ export class DefaultV1Component extends AbstractCoreComponent implements Default
     get isEmpty(): boolean {
         return DefaultV1IsEmptyFn(this);
     }
-}
-
-export function DefaultV1IsEmptyFn(props:DefaultV1Model): boolean{
-    return props.aHtml == null || props.aHtml.trim().length === 0;
 }

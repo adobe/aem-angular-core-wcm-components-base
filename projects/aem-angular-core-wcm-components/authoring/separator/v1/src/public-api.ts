@@ -16,3 +16,6 @@
 
 export * from "./separator.v1.component";
 export * from "./separator.v1.module";
+
+import {SeparatorV1IsEmptyFn} from "@adobe/aem-core-components-angular-base/core";
+export {SeparatorV1IsEmptyFn}

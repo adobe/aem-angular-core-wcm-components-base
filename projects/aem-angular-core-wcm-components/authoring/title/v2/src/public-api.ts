@@ -16,3 +16,6 @@
 
 export * from "./title.v2.component";
 export * from "./title.v2.module";
+
+import {TitleV2IsEmptyFn, TitleV2Model} from "@adobe/aem-core-components-angular-base/core";
+export {TitleV2IsEmptyFn, TitleV2Model};

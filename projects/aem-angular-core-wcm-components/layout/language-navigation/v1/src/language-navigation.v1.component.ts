@@ -15,18 +15,8 @@
  */
 
 import {Component, HostBinding, Input} from "@angular/core";
-import {NavigationV1Component, NavigationV1IsEmptyFn, NavigationV1Item, NavigationV1Model} from "@adobe/aem-core-components-angular-base/layout/navigation/v1";
-
-export interface LanguageNavigationV1Item extends NavigationV1Item{
-    locale: string,
-    country: string,
-    language: string
-    children?: LanguageNavigationV1Item[]
-}
-
-export interface LanguageNavigationV1Model extends NavigationV1Model{
-    items:LanguageNavigationV1Item[]
-}
+import {NavigationV1Component, NavigationV1IsEmptyFn, NavigationV1Item} from "@adobe/aem-core-components-angular-base/layout/navigation/v1";
+import {LanguageNavigationV1Item, LanguageNavigationV1Model} from "@adobe/aem-core-components-angular-base/core";
 
 @Component({
     selector: 'core-language-navigation-v1',

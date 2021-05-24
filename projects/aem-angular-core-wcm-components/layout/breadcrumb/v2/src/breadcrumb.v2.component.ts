@@ -16,22 +16,14 @@
 
 import {Component, HostBinding, Inject, Input} from "@angular/core";
 
-import {AbstractRoutedCoreComponent, NavigationItemModel,RoutedCoreComponentModel,NAVIGATION_UTIL_SERVICE,NavigationUtilityService} from "@adobe/aem-core-components-angular-base/core";
-
-export interface BreadCrumbV2ItemModel extends NavigationItemModel{
-    active: boolean
-    url: string
-    title: string
-}
-
-export interface BreadCrumbV2Model extends RoutedCoreComponentModel{
-    items: BreadCrumbV2ItemModel[]
-    ariaLabelI18n: string
-}
-
-export function BreadCrumbV2IsEmptyFn(props: BreadCrumbV2Model): boolean {
-    return props.items == null || props.items.length === 0;
-}
+import {
+    AbstractRoutedCoreComponent,
+    NavigationItemModel,
+    RoutedCoreComponentModel,
+    NAVIGATION_UTIL_SERVICE,
+    NavigationUtilityService,
+    BreadCrumbV2Model, BreadCrumbV2IsEmptyFn, BreadCrumbV2ItemModel
+} from "@adobe/aem-core-components-angular-base/core";
 
 @Component({
     selector: 'core-breadcrumb-v2',

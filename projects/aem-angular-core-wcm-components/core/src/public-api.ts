@@ -24,3 +24,4 @@ export * from "./model/NavigationItemModel";
 export * from "./model/RoutedCoreComponentModel";
 export * from "./AbstractRoutedCoreComponent";
 export * from "./AbstractCoreComponent";
+export * from "./emptyfunctions";

@@ -15,28 +15,12 @@
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 import {Component, Input, Output, EventEmitter, HostBinding} from '@angular/core';
-import {AbstractCoreComponent} from "@adobe/aem-core-components-angular-base/core";
+import {
+    AbstractCoreComponent,
+    DownloadV1IsEmptyFn,
+    DownloadV1LabelsModel, DownloadV1Model
+} from "@adobe/aem-core-components-angular-base/core";
 
-export interface DownloadV1LabelsModel {
-    filename?: string
-    filesize?: string;
-    fileformat?: string;
-}
-
-export interface DownloadV1Model{
-    url?: string
-    title: string
-    description?: string
-    actionText?: string
-    filename?: string
-    format?: string
-    size?: string
-    extension: string
-    displayFilename: boolean
-    displaySize: boolean
-    displayFormat: boolean
-    labels: DownloadV1LabelsModel
-}
 
 @Component({
     selector: 'core-download-v1',
@@ -103,8 +87,4 @@ export class DownloadV1Component extends AbstractCoreComponent implements Downlo
         return DownloadV1IsEmptyFn(this);
     }
 
-}
-
-export function DownloadV1IsEmptyFn(props:DownloadV1Model): boolean{
-    return props.url == null || props.url.trim().length === 0;
 }

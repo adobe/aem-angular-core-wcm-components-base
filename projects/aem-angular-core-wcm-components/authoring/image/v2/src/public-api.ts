@@ -16,3 +16,6 @@
 
 export * from "./image.v2.component";
 export * from "./image.v2.module";
+
+import {ImageV2IsEmptyFn, ImageV2Model} from "@adobe/aem-core-components-angular-base/core";
+export {ImageV2IsEmptyFn, ImageV2Model}
