@@ -14,8 +14,8 @@
  ~ limitations under the License.
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-export * from "./list.v2.component";
-export * from "./list.v2.module";
-
 import {ListV2IsEmptyFn, ListV2Item, ListV2Model} from "@adobe/aem-core-components-angular-base/core";
-export {ListV2IsEmptyFn, ListV2Item, ListV2Model}
+export * from "./list.v2.component";
+
+export * from "./list.v2.module";
+export {ListV2IsEmptyFn, ListV2Item, ListV2Model};

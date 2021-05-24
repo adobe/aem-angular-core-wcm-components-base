@@ -14,8 +14,8 @@
  ~ limitations under the License.
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-export * from "./text.v2.component";
-export * from "./text.v2.module";
-
 import {TextV2IsEmptyFn, TextV2Model} from "@adobe/aem-core-components-angular-base/core";
-export {TextV2IsEmptyFn, TextV2Model}
+export * from "./text.v2.component";
+
+export * from "./text.v2.module";
+export {TextV2IsEmptyFn, TextV2Model};
