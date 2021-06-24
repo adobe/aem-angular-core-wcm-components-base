@@ -69,10 +69,26 @@ describe('ButtonV1Component', () => {
     });
 
 
+    it('render provided HTML without ID and datalayer', () => {
+        isInEditorSpy.and.returnValue(false);
+
+        component.html = `<div id="test">hi there!</div>`;
+
+        fixture.detectChanges();
+        const element = fixture.nativeElement;
+
+        const wrapper = element.querySelector('.cmp-default-wrapper');
+
+        expect(wrapper.querySelector("#test").innerText).toEqual('hi there!');
+
+
+    });
+
+
     it('render provided HTML', () => {
         isInEditorSpy.and.returnValue(false);
 
-        component.aHtml = `<div id="test">hi there!</div>`;
+        component.html = `<div id="test">hi there!</div>`;
         component.id = 'myId';
         component.dataLayer = {
             "testaccordion": {

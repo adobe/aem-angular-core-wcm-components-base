@@ -25,9 +25,13 @@ import {AbstractCoreComponent, DefaultV1IsEmptyFn, DefaultV1Model} from "@adobe/
 export class DefaultV1Component extends AbstractCoreComponent implements DefaultV1Model{
 
     @Input()  baseCssClass = 'cmp-default';
-    @Input("html") aHtml;
+    @Input()  html;
 
     get isEmpty(): boolean {
         return DefaultV1IsEmptyFn(this);
+    }
+
+    get aHtml(){
+        return this.html;
     }
 }

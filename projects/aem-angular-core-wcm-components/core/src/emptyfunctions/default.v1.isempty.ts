@@ -1,8 +1,8 @@
 
 export interface DefaultV1Model{
-    aHtml: string;
+    html: string;
 }
 
 export function DefaultV1IsEmptyFn(props:DefaultV1Model): boolean{
-    return props.aHtml == null || props.aHtml.trim().length === 0;
+    return props.html == null || props.html.trim().length === 0;
 }
